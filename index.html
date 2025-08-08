@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="description" content="LuxQuant VIP - Premium AI-Powered Crypto Trading Signals with high Win Rate. Join elite traders using advanced automation." />
+    <meta name="keywords" content="crypto trading, trading signals, bitcoin, ethereum, AI trading, automated trading" />
+    <meta name="author" content="LuxQuant VIP" />
+    <meta name="theme-color" content="#FFD700" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="LuxQuant VIP - Premium Crypto Trading Signals" />
+    <meta property="og:description" content="AI-Powered Trading Excellence with High Win Rate" />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:url" content="https://luxquant.online" />
+    <meta property="og:type" content="website" />
+
+    <title>LuxQuant VIP - Premium AI Crypto Trading Signals</title>
+
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="//unpkg.com" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/critical.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/referral.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/LuxQuant VIP Logo Design-Photoroom.png" type="image/png" sizes="64x64" />
+  </head>
+  <body class="loading">
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+      <div class="loader-content">
+        <div class="loader-logo">
+          <img src="LuxQuant VIP Logo Design-Photoroom.png" alt="LuxQuant VIP" width="200" height="67" />
+        </div>
+        <div class="loader-tagline">Premium Trading Excellence</div>
+        <div class="loader-progress">
+          <div class="loader-progress-bar" id="loaderProgressBar"></div>
+        </div>
+        <div class="loader-percentage" id="loaderPercentage">0%</div>
+      </div>
+    </div>
+
+    <!-- Mouse Effects (Desktop Only) -->
+    <div class="mouse-follower desktop-only"></div>
+    <div class="mouse-dot desktop-only"></div>
+
+    <!-- Background Effects -->
+    <div class="bg-container">
+      <div class="bg-gradient"></div>
+      <canvas id="particles-canvas" class="desktop-only"></canvas>
+    </div>
+
+    <!-- Live Price Ticker -->
+    <div class="price-ticker-wrapper">
+      <div class="price-ticker" id="priceTicker">
+        <div class="ticker-content">
+          <!-- Ticker items will be dynamically added -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="logo-wrapper">
+            <a href="#home" class="logo">
+              <img src="LuxQuant VIP Logo Design-Photoroom.png" alt="LuxQuant VIP" width="150" height="50" />
+            </a>
+          </div>
+
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home" data-nav="home">Home</a></li>
+            <li><a href="#why-choose" data-nav="why-choose">Why Choose</a></li>
+            <li><a href="#features" data-nav="features">Features</a></li>
+            <li><a href="#testimonials" data-nav="testimonials">Reviews</a></li>
+            <li><a href="#pricing" data-nav="pricing">Pricing</a></li>
+            <li class="nav-cta">
+              <a href="#pricing" class="nav-btn-primary">
+                <span>SUBSCRIBE NOW</span>
+              </a>
+            </li>
+          </ul>
+
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-bg-effects desktop-only">
+          <div class="hero-glow"></div>
+          <div class="hero-grid"></div>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-icon">₿</span>
+            <span>24/7 Automated Signals</span>
+            <span class="badge-icon">₿</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-line">Tools for Automated Crypto</span>
+            <span class="title-line gradient-text">Trading Setup 24/7</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Help traders identify market opportunities without having to monitor charts continuously.
+            <br />with <span class="highlight-number">Historical Accuracy of <span data-stat="winRate"></span></span> (No Future Guarantee)
+          </p>
+
+          <!-- Marketing Text -->
+          <div class="hero-marketing">
+            <p class="marketing-text">
+              <strong>Optimize Your Trading Today! 🚀</strong> Get direct access to 24-hour automated tools that provide crypto market setup detection, complete with real-time updates from the LuxQuant system.
+            </p>
+          </div>
+
+          <!-- Live Stats Cards -->
+          <div class="live-stats">
+            <div class="stat-card live">
+              <div class="stat-icon">📈</div>
+              <div class="stat-content">
+                <span class="stat-number" data-stat="winRate"></span>
+                <span class="stat-label">Historical System Accuracy (Win-Rate)</span>
+              </div>
+            </div>
+
+            <div class="stat-card live">
+              <div class="stat-icon">⚡</div>
+              <div class="stat-content">
+                <span class="stat-number" data-stat="totalSignals"></span>
+                <span class="stat-label">Total System Output</span>
+              </div>
+            </div>
+
+            <div class="stat-card live">
+              <div class="stat-icon">🟢</div>
+              <div class="stat-content">
+                <span class="stat-number" data-stat="globalUsers"></span>
+                <span class="stat-label">Global Users</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta">
+            <a href="#pricing" class="btn btn-primary btn-glow">
+              <span>SUBSCRIBE NOW</span>
+            </a>
+            <a href="#pricing" class="btn btn-secondary">
+              <span>VIEW PACKAGES</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Section -->
+      <section id="why-choose" class="why-choose">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">LuxQuant Advantages</span>
+            <h2 class="section-title">
+              <span>Why Choose</span>
+              <span class="gradient-text">LuxQuant VIP?</span>
+            </h2>
+            <p class="section-subtitle">
+              Automated crypto market monitoring system that provides proven efficient and responsive trade setups
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <span class="feature-icon">🎯</span>
+              </div>
+              <h3>Precision Signals</h3>
+              <p>
+                Automated system provides detection of entry and exit price zones based on real-time market data.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <span class="feature-icon">⚡</span>
+              </div>
+              <h3>Real-Time Alerts</h3>
+              <p>
+                Real-time notifications via Telegram so users stay connected with market movements quickly and responsively.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <span class="feature-icon">📊</span>
+              </div>
+              <h3>Advanced Analytics</h3>
+              <p>
+                Output provided includes volume ranking monitoring and risk level indicators that are automatically read by the system.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <span class="feature-icon">🔒</span>
+              </div>
+              <h3>Risk Management</h3>
+              <p>
+                Every system output includes risk point estimation (stop-loss).
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <span class="feature-icon">📈</span>
+              </div>
+              <h3>Proven Track Record</h3>
+              <p>
+                Transparent historical performance tracking based on the system — no future results promised.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <span class="feature-icon">🤖</span>
+              </div>
+              <h3>24/7 Automation</h3>
+              <p>
+                Full 24-hour automatic market monitoring that processes data and provides systematic output continuously.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section with Updated Carousel -->
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">VIP Features</span>
+            <h2 class="section-title">
+              <span>Advanced Crypto Trading</span>
+              <span class="gradient-text">Technology</span>
+            </h2>
+            <p class="section-subtitle">
+              Everything you need to respond to volatile crypto markets in real-time
+            </p>
+          </div>
+
+          <div class="features-showcase">
+            <div class="showcase-main">
+              <div class="showcase-phone">
+                <!-- iPhone Buttons -->
+                <div class="iphone-buttons">
+                  <div class="silent"></div>
+                  <div class="vol-up"></div>
+                  <div class="vol-down"></div>
+                  <div class="sleep"></div>
+                </div>
+
+                <!-- iPhone Top -->
+                <div class="iphone-top">
+                  <div class="black-bar"></div>
+                  <div class="notch">
+                    <div class="iphone-components">
+                      <div class="speaker"></div>
+                      <div class="camera"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="phone-screen">
+                  <!-- Image Carousel -->
+                  <div class="image-carousel">
+                    <div class="carousel-container" id="carouselContainer">
+                      <img src="images/fiturlq1.png" alt="LuxQuant Telegram Channels" class="signal-screenshot">
+                      <img src="images/fiturlq2.png" alt="LuxQuant Signal Details" class="signal-screenshot">
+                      <img src="images/fiturlq3.png" alt="LuxQuant Trading Results" class="signal-screenshot">
+                      <img src="images/fiturlq4.png" alt="LuxQuant Market Analysis" class="signal-screenshot">
+                      <img src="images/fiturlq5.png" alt="LuxQuant AI Consultant" class="signal-screenshot">
+                    </div>
+                    <!-- Loading Overlay -->
+                    <div class="loading-overlay" id="loadingOverlay">
+                      <div class="loading-spinner"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Carousel Navigation -->
+              <div class="carousel-nav">
+                <button class="nav-btn prev-btn" id="prevBtn">‹</button>
+                <div class="carousel-dots" id="carouselDots">
+                  <span class="dot active" data-slide="0"></span>
+                  <span class="dot" data-slide="1"></span>
+                  <span class="dot" data-slide="2"></span>
+                  <span class="dot" data-slide="3"></span>
+                  <span class="dot" data-slide="4"></span>
+                </div>
+                <button class="nav-btn next-btn" id="nextBtn">›</button>
+              </div>
+            </div>
+
+            <div class="showcase-features">
+              <div class="showcase-feature">
+                <div class="feature-icon-box">
+                  <span>🎯</span>
+                </div>
+                <div class="feature-content">
+                  <h4>AI-Powered Analysis</h4>
+                  <p>
+                    Automated algorithms analyze market patterns 24/7 to detect potential price movements based on real-time data.
+                  </p>
+                </div>
+              </div>
+
+              <div class="showcase-feature">
+                <div class="feature-icon-box">
+                  <span>⚡</span>
+                </div>
+                <div class="feature-content">
+                  <h4>Instant Notifications</h4>
+                  <p>
+                    Real-time notifications directly to your Telegram when the system detects important price zones in market movements.
+                  </p>
+                </div>
+              </div>
+
+              <div class="showcase-feature">
+                <div class="feature-icon-box">
+                  <span>📊</span>
+                </div>
+                <div class="feature-content">
+                  <h4>Market Analytics</h4>
+                  <p>
+                    Automatic market analysis based on technical indicators, volume, and risk to market conditions.
+                  </p>
+                </div>
+              </div>
+
+              <div class="showcase-feature">
+                <div class="feature-icon-box">
+                  <span>💎</span>
+                </div>
+                <div class="feature-content">
+                  <h4>VIP Support</h4>
+                  <p>
+                    VIP support team ready to help 24/7 to answer questions and issues related to system usage.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Success Stories</span>
+            <h2 class="section-title">
+              <span>What Users Say About LuxQuant</span>
+              <span class="gradient-text">Real Stories from Their Experience</span>
+            </h2>
+          </div>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-item">
+              <div class="testimonial-card">
+                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">
+                  "LuxQuant is excellent. First trial already proven. Besides updated predictions, we are also equipped with AI consultant for live consultation and knowledge about macro and economic data. 👌🏻🙏🏻"
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <span>AC</span>
+                  </div>
+                  <div class="author-info">
+                    <h4>Il**m A G</h4>
+                    <span>Head of Car Repair Shop</span>
+                  </div>
+                  <div class="testimonial-badge">Verified</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="testimonial-card">
+                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">
+                  "Great, I can work while trading. Just check Telegram every 5 minutes then follow the signals, so I don't need to spend time looking for market potential myself with this LuxQuant"
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <span>SJ</span>
+                  </div>
+                  <div class="author-info">
+                    <h4>Fab**a FMZ</h4>
+                    <span>University Student</span>
+                  </div>
+                  <div class="testimonial-badge">Verified</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="testimonial-card">
+                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">
+                  "Initially I was hesitant, but after trying it, I feel the LuxQuant system is quite consistent in presenting relevant data and equipped with clear risk settings."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <span>MR</span>
+                  </div>
+                  <div class="author-info">
+                    <h4>R**n*ld G</h4>
+                    <span>Crypto Investor</span>
+                  </div>
+                  <div class="testimonial-badge">Verified</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Stats -->
+          <div class="testimonial-stats">
+            <div class="stat-box">
+              <div class="stat-number" data-stat="globalUsers"></div>
+              <div class="stat-label">Global User (Taiwan as main brand and Global)</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number" data-stat="userRating"></div>
+              <div class="stat-label">User Rating</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number" data-stat="satisfiedUsers"></div>
+              <div class="stat-label">Satisfied Users</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Media Section -->
+      <section class="social-media-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Connect With Us</span>
+            <h2 class="section-title">
+              <span>Follow Us on</span>
+              <span class="gradient-text">Social Media</span>
+            </h2>
+            <p class="section-subtitle">
+              Get the latest updates about LuxQuant system services
+            </p>
+          </div>
+
+          <div class="social-media-grid">
+            <a href="https://instagram.com/luxquanttrade" class="social-card instagram" target="_blank" rel="noopener">
+              <div class="social-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z" />
+                </svg>
+              </div>
+              <h3>Instagram</h3>
+              <p>Get the latest info about our services on Instagram</p>
+            </a>
+
+            <a href="https://tiktok.com/@luxquant.trade" class="social-card tiktok" target="_blank" rel="noopener">
+              <div class="social-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                </svg>
+              </div>
+              <h3>TikTok</h3>
+              <p>Get the latest info about our services on TikTok</p>
+            </a>
+
+            <a href="https://x.com/luxquanttrade" class="social-card twitter" target="_blank" rel="noopener">
+              <div class="social-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </div>
+              <h3>X (@luxquanttrade)</h3>
+              <p>Get updates about crypto and LuxQuant</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="pricing" class="pricing">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Membership Plans</span>
+            <h2 class="section-title">
+              <span>Choose Access Package</span>
+              <span class="gradient-text">LuxQuant System</span>
+            </h2>
+          </div>
+
+          <div class="pricing-wrapper">
+            <div class="pricing-card featured">
+              <div class="pricing-badge">BEST VALUE</div>
+              <div class="pricing-header">
+                <h3>Lifetime Access</h3>
+                <div class="pricing-price">
+                  <span class="currency">Only</span>
+                  <span class="amount" id="priceAmount" data-stat="price">$69.99</span>
+                  <span class="period">/lifetime</span>
+                </div>
+                <div class="price-info">
+                  <span class="pricing-save" id="originalPrice">One-time payment only use USDT</span>
+                  <div class="discount-info" id="discountInfo" style="display: none;">
+                    <div class="original-price">Regular: <span style="text-decoration: line-through;">$69.99</span></div>
+                    <div class="discount-price">KOL Discount: <span style="color: #4ade80; font-weight: 700;">$61.24 (12.5% OFF)</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Referral Code Section (Optional) -->
+              <div class="referral-section">
+                <div class="referral-title">
+                  🎁 Have KOL Referral Code? (Optional)
+                </div>
+                <div class="referral-subtitle">
+                  Enter your KOL code to get 12.5% discount
+                </div>
+                <div class="referral-input-group">
+                  <input type="text" id="referralCode" class="referral-input" placeholder="Enter KOL referral code (optional)..." maxlength="20">
+                  <button class="verify-btn" id="verifyBtn">Apply</button>
+                </div>
+                <div class="referral-status" id="referralStatus"></div>
+                <div class="generated-code" id="generatedCode">
+                  <div>🎉 Discount Applied! Your Access Code:</div>
+                  <div id="accessCodeDisplay"></div>
+                  <div class="discount-activated">
+                    ✅ 12.5% discount activated!
+                  </div>
+                  <button class="copy-btn" id="copyBtn">Copy Code</button>
+                </div>
+              </div>
+
+              <div class="requirement-note">
+                💡 <strong>Optional:</strong> Enter KOL referral code to get 12.5% discount. You can subscribe directly without code at regular price.
+              </div>
+
+              <ul class="pricing-features">
+                <li>
+                  <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none" />
+                  </svg>
+                  <span>Complete trade setup outputs</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none" />
+                  </svg>
+                  <span>Real-time notifications via Telegram</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none" />
+                  </svg>
+                  <span>Analysis equipped with volume ranking</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none" />
+                  </svg>
+                  <span>Equipped with risk info for user risk management</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none" />
+                  </svg>
+                  <span>24/7 VIP Support</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none" />
+                  </svg>
+                  <span>Access to AI Consultant from LuxQuant Team</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none" />
+                  </svg>
+                  <span>Get access to advanced service development</span>
+                </li>
+              </ul>
+
+              <button class="pricing-btn primary" id="accessBtn">
+                <span id="btnText">Get Lifetime Access</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2 class="cta-title">
+              Ready to Start Your
+              <span class="gradient-text">Profitable Trading Journey?</span>
+            </h2>
+            <p class="cta-subtitle">
+              Join thousands of successful traders who trust LuxQuant for
+              consistent profits
+            </p>
+            <div class="cta-stats">
+              <div class="cta-stat">
+                <span class="cta-stat-number" data-stat="globalUsers"></span>
+                <span class="cta-stat-label">Global Users</span>
+              </div>
+              <div class="cta-stat">
+                <span class="cta-stat-number" data-stat="winRate"></span>
+                <span class="cta-stat-label">Win Rate</span>
+              </div>
+              <div class="cta-stat">
+                <span class="cta-stat-number">24/7</span>
+                <span class="cta-stat-label">Support</span>
+              </div>
+            </div>
+            <div class="cta-buttons">
+              <a href="#pricing" class="btn btn-primary btn-large">
+                <span>Subscribe Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="LuxQuant VIP Logo Design-Photoroom.png" alt="LuxQuant VIP" width="150" height="50" />
+            </div>
+            <p class="footer-desc">
+              Premium AI-powered crypto trading signals with proven results.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="https://t.me/luxquantadmin">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 LuxQuant VIP. All rights reserved.</p>
+          <p class="footer-disclaimer">
+            Trading involves risk. Past performance is not indicative of future
+            results.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M12 19V5m0 0l-6 6m6-6l6 6" stroke="currentColor" stroke-width="2" fill="none" />
+      </svg>
+    </button>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+      <div class="cookie-content">
+        <p>We use cookies to enhance your experience.</p>
+        <div class="cookie-actions">
+          <button class="cookie-accept" id="acceptCookies">Accept</button>
+          <button class="cookie-decline" id="declineCookies">Decline</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <!-- JavaScript Files -->
+    <script src="js/config.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/referral.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
